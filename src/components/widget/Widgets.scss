@@ -1,0 +1,9 @@
+.iframe {
+    margin: 28px 30px;
+}
+
+@media only screen and(max-width: 1400px) {
+    .iframe {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.feed {
+    overflow: hidden;
+    flex: 1;
+    padding: 30px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .feed {
+        padding: 30px 5px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .feed {
+        padding: 30px 2px;
+        width: 100%;
+    }
+}

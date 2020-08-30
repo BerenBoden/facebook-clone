@@ -1,0 +1,109 @@
+$background-light: #eff2f5;
+$hover-blue: #2e81f4;
+
+.header {
+    height: 65px;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 5px 8px -9px rgba(0,0,0,0.75);
+    .header__left {
+        displaY: flex;
+        justify-content: space-evenly;
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .header__center {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .header__input {
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 999px;
+        background-color: $background-light;
+        input {
+            outline-width: 0;        
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .header__option{
+        &:hover {
+            border-radius: 10px;
+            align-items: center;
+            padding: 0 30px;
+            background-color: $background-light;
+            border-bottom: none;
+            .MuiSvgIcon-root {
+                color: blue;
+            }
+        }
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        cursor: pointer;
+        .MuiSvgIcon-root {
+            color: grey;
+        }
+    }
+    .header__info {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-left: 10px;
+        }
+    }
+    .header__right {
+        display: flex;
+    }
+}
+
+.header__option--active {
+    border-bottom: 4px solid $hover-blue;
+    .MuiSvgIcon-root {
+        color: $hover-blue;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .header {
+        width: 100%;
+        .header__input {
+            display: none;
+
+        }
+    }
+} 
+
+@media only screen and (max-width: 960px) {
+    .header {
+        .header__right {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:675px) {
+    .header {
+        justify-content: space-evenly;
+        .header__center {
+            padding: 0;
+            margin: 0;
+            right: 0;
+        }
+        .header__option {
+            padding: 0 10px;
+        }
+    }
+}
