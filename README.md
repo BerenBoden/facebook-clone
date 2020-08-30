@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Facebook clone using React and Firebase. Bootstrapped with create-react-app. 
 
 ## Available Scripts
 

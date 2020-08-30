@@ -16,7 +16,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useStateValue } from '../provider/StateProvider';
 
 function Header() {
-    const [{user}, dispatch] = useStateValue();
+    const [{user}] = useStateValue();
     return (
         <div className="header">
             <div className="header__left">
@@ -27,20 +27,20 @@ function Header() {
                 <input placeholder="Search Facebook..." type="text" />
             </div>
             <div className="header__center">
-                <div className="header__option--active">
-                    <HomeIcon fontSize="large"/>
+                <div className="header__option">
+                    <HomeIcon fontSize="medium"/>
                 </div>
                 <div className="header__option">
-                    <FlagIcon fontSize="large"/>
+                    <FlagIcon fontSize="medium"/>
                 </div>
                 <div className="header__option">
-                    <SubscriptionsOutlinedIcon fontSize="large"/>
+                    <SubscriptionsOutlinedIcon fontSize="medium"/>
                 </div>
                 <div className="header__option">
-                    <StorefrontOutlinedIcon fontSize="large"/>
+                    <StorefrontOutlinedIcon fontSize="medium"/>
                 </div>
                 <div className="header__option">
-                    <SupervisedUserCircleIcon fontSize="large"/>
+                    <SupervisedUserCircleIcon fontSize="medium"/>
                 </div>
             </div>
             <div className="header__right">
