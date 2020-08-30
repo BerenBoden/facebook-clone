@@ -1,5 +1,7 @@
 A simple Facebook clone using React and Firebase. Bootstrapped with create-react-app. 
 
+View this live here: https://fb-clone-da943.web.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
